@@ -1,0 +1,295 @@
+    /*pbligatorio en toda web*/
+    *{
+    margin: 0;
+    padding: 0;
+    }
+
+    html{
+    box-sizing: border-box;
+
+    box-sizing: border-box;
+    }
+
+    *,*::before,*::after{
+    box-sizing: inherit;
+    }
+
+    body{
+    font-family: 'Open Sans', sans-serif;
+    overflow-x: hidden;
+    }
+    /* ****************************** */
+
+
+    /* GLOBALES   */
+    .contenedor{
+    width: 98%;
+    margin: 0 auto;
+    }
+    /*CONTROLAMOS EL TEXTO DEL POR NOSOTROS*/
+    @media only screen and (min-width:480px){
+    .contenedor{
+      width: 95%;
+    }
+    }
+
+    @media only screen and (min-width: 768px){
+    .contenedor{
+      width: 90%;
+    }
+    }
+
+    @media only screen and (min-width: 992px){
+    .contenedor{
+      width: 90%;
+      max-width: 1100px;
+    }
+    }
+
+    /*parte del por que nosotros*/
+    .seccion{
+    padding: 30px 0;
+    }
+
+    .seccion p{
+    font-size: 1em;
+    text-align: center;
+    }
+
+    h2{
+    font-size: 2.4em;
+    text-align: center;
+    /*para que el texto este en mayusculas*/
+    text-transform: uppercase;
+    }
+
+    /*img del separador*/
+    h2::after{
+    /*contenido vacio*/
+    content: '';
+    margin: 0 auto;
+    background: url(../img/separador.png);
+    height: 30px;
+    width: 100px;
+    display: block;
+    }
+
+    /*espacio ariba y abajo del  por que nosotros*/
+    .mt-3{
+    margin-top: 30px;
+    }
+
+    .mb-3{
+    margin-bottom: 30px;
+    }
+
+    .mt-5{
+      margin-top: 50px;
+    }
+  /*espacios*/
+    .mb-5{
+      margin-bottom: 50px;
+    }
+
+
+  /* creamos una linea debajo de las columnas */
+    hr{
+      width: 80%;
+      margin: 0 auto;
+      color: rgb(14, 204, 51);
+    }
+
+    /*  HEADER  */
+
+    .bg-fondo{
+    background: url(../img/bg-hero.jpg);
+    height: 100vh;
+    background-position: top-center;
+    background-size:
+    }
+
+
+    .nav{
+    position: relative;
+    }
+
+    .menu{
+    text-align: center;
+    background: rgb(22, 21, 20);
+    padding: 15px;
+    border-bottom: 1px solid rgb(236, 236, 229);
+    }
+
+    .ul, .menu{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    }
+
+    .menu li{
+    /*COLOCAR EL MENU  LATERAL*/
+    display: inline-block;
+    }
+
+    .menu li a{
+    display: block;
+    color: #ebd7e8;
+    text-align: center;
+    /*14px ariba y abajo 16ps a ambos lados*/
+    padding: 14px 16px;
+    text-decoration: none;
+    }
+
+    /*CUANDO PASEMOS EL AMUSE POR EL MENU TENGA UN EFECTO*/
+    .menu a:hover{
+    background: rgb(180, 109, 4);
+    }
+
+    /*TITULO HEADER*/
+    .titulo-header{
+    text-align: center;
+    color: rgb(242, 228, 224);
+    /*centrar texto*/
+    margin-top: 100px;
+    }
+
+    /*para hacer nuestro sitio rsponsi*/
+    @media only screen and (min-width: 768px;){
+    .titulo-header{
+      width: 70%;
+      margin: 0 auto;
+      margin-top: 160px;
+    }
+    }
+
+    .titulo-header p{
+    margin: 0;
+    display: inline;
+    font-size: 30px;
+    }
+
+    .eslogan span{
+    /*ponemos en negrita */
+    font-weight: bold;
+    }
+
+
+    /*tamanio  del texto del encabezado*/
+    .nombre-sitio{
+    font-size: 6.9vw;
+    /*texto en mayuscula*/
+    text-transform: uppercase;
+    }
+
+    /*para hacer nuestro sitio rsponsi*/
+    @media only screen and (min-width: 768px;){
+    .nombre-sitio h1{
+      font-size: 11.5vw;
+      margin: 0 auto;
+      line-height: 1;
+    }
+    }
+
+
+
+    /*  GRID COLUMASN PARA EL CONTENDIO  */
+    @media only screen and (min-width: 768px) {
+    .grid{
+      margin-left: 25px;
+      margin-right: 25px;
+    }
+
+      .grid::after{
+        content: '';
+        /*para que detecte que es un bloque*/
+        display: block;
+        clear: both;
+      }
+
+      [class="columnas-3"]{
+        padding: 0 25px;
+        /*todo el contenido de flote a la izquierda*/
+        float: left;
+      }
+
+      .columnas-3{
+        width: 20%;
+        text-align: justify;
+        column-gap: 50em;
+        padding: 10px;
+        margin: 60px;
+      }
+    }
+
+
+ /* para poner la linea vertical de color verde el cuadro */
+.contenido{
+  background: rgb(169, 177, 180) ;              /*color del trianglo*/            /*color de fonso plomo*/
+  background-image: -webkit-linear-gradient(120deg, #e78f3e 30%, #8a8487 30%);
+  min-height: 400px;
+}
+
+
+/***********************/
+  .contenedor-ciudad{
+    padding: 40px;
+    column-count: 2;
+    text-align: justify;
+  }
+
+  .imagen{
+    text-align: center;
+  }
+
+  .imagen-compu{
+    padding: 0 20px;
+    text-align: center;
+  }
+
+
+/* CONTENEDOR CUIDADES-PRINCIPAL LETRAS MAS GRANDES*/
+.contenedor-ciudad h3{
+  font-size: 2em;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+}
+
+.contenedor-ciudad p{
+  /*espacio entre el titulo de ciudad principal y el parrafo*/
+  margin: 10px 0;
+}
+
+/*para que todo el tecto se flote a la derecha*/
+.descripcion{
+  float: right;
+  text-align: right;
+}
+
+/* para la GALERIA */
+/*********/
+
+.contenedor-imagenes{
+  display: flex;
+  width: 80%;
+  margin: auto;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  border-radius: 3px;
+}
+
+.contenedor-imagenes .imagen-hover{
+  width: 32%;
+  position: relative;
+  height: 250%;
+  margin-bottom: 5px;
+}
+
+
+/***************/
+.cierre{
+  width: 100%;
+  height: 45%;
+  background-color: rgb(50, 50, 54);
+  text-align: center;
+}
